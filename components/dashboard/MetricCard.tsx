@@ -24,10 +24,10 @@ export function MetricCard({ metric }: { metric: Metric }) {
 
           <div
             className={cn(
-              "inline-flex items-center gap-1 rounded-full px-2.5 py-1 text-xs font-semibold",
+              "inline-flex items-center gap-1 rounded-full border px-2.5 py-1 text-xs font-semibold",
               positive
-                ? "bg-emerald-50 text-emerald-800 dark:bg-emerald-500/10 dark:text-emerald-200"
-                : "bg-rose-50 text-rose-800 dark:bg-rose-500/10 dark:text-rose-200",
+                ? "border-emerald-200 bg-emerald-100 text-emerald-950 dark:border-emerald-400/20 dark:bg-emerald-500/10 dark:text-emerald-200"
+                : "border-rose-200 bg-rose-100 text-rose-950 dark:border-rose-400/20 dark:bg-rose-500/10 dark:text-rose-200",
             )}
           >
             {positive ? (
@@ -45,4 +45,3 @@ export function MetricCard({ metric }: { metric: Metric }) {
     </motion.div>
   );
 }
-
